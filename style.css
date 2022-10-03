@@ -1,0 +1,25 @@
+:root {
+    --bg-clr: rgb(207, 207, 207);
+    --neutral-clr:  #002630;
+    --accent-clr: rgb(85, 30, 58);
+}
+
+body {
+    background-color: var(--bg-clr);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: var(--neutral-clr);
+}
+
+li {
+    list-style: square;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-clr);
+    font-weight: bold;
+}
