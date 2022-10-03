@@ -5,10 +5,23 @@
         <meta name=author content="Stavroula Lekka">
 
         <title>Purchase Orders</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="api-response.js"></script>
+        <script  src="script.js"></script>
     </head>
     <body>
         <main>
+            <div id="orders-target"></div>
 
+            <script id="orders-template" type="text/x-handlebars-template">
+                <ul>
+                    {{#each order}}
+                    <li><a href="">{{PurchaseOrderTypeAbbreviation}} -- {{PurchaseOrderNo}}</a></li>
+                    {{/each}}
+                </ul>
+            </script>
         </main>
     </body>
 </html>
