@@ -13,12 +13,13 @@
     </head>
     <body>
         <main>
+            <h1>Orders</h1>
             <div id="orders-target"></div>
 
             <script id="orders-template" type="text/x-handlebars-template">
                 <ul>
                     {{#each order}}
-                    <li><a href="">{{PurchaseOrderTypeAbbreviation}} -- {{PurchaseOrderNo}}</a></li>
+                    <li><a href="order-info.html?order={{PurchaseOrderId}}" target="_blank">{{PurchaseOrderTypeAbbreviation}} -- {{PurchaseOrderNo}}</a></li>
                     {{/each}}
                 </ul>
             </script>
