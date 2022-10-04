@@ -1,3 +1,4 @@
+//contents of given json file
 const jsonFile = `{
     "mvPurchaseOrders":[
        {
@@ -329,3 +330,7 @@ const jsonFile = `{
        "ErrorCode":"0"
     }
  }`
+
+//parsing
+const orders = JSON.parse(jsonFile)
+if (orders.ResponseStatus.ErrorCode != 0) console.log("Error Code: "+ orders.ResponseStatus.ErrorCode)
