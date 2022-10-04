@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name=author content="Stavroula Lekka">
+
+        <title>Order Info</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="api-response.js"></script>
+        <script src="info.js"></script>
+
+    </head>
+    <body>
+        <main>
+            <h1>Order Info</h1>
+            <div id="info-target"></div>
+
+            <script id="info-template" type="text/x-handlebars-template">
+                <p>{{PurchaseOrderAddress}}</p>
+                <p>{{PurchaseOrderContactPerson}}</p>
+                <p>{{PurchaseOrderStatus}}</p>
+                <p>
+                <table id="products">
+                </table>   
+                    
+                </ul>
+            </script>
+        </main>
+    </body>
+</html>
