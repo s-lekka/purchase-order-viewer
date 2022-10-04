@@ -1,25 +1,58 @@
 :root {
-    --bg-clr: rgb(207, 207, 207);
+    --bg-clr: #cfcfcf;
     --neutral-clr:  #002630;
-    --accent-clr: rgb(85, 30, 58);
+    --accent-clr: #4da456;
 }
 
 body {
     background-color: var(--bg-clr);
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
+    padding-left: 5rem;
     color: var(--neutral-clr);
 }
 
+ul {
+    padding: 0;
+}
+
 li {
-    list-style: square;
+    list-style: none inside;
+    width: 10rem;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid var(--neutral-clr);
+    text-align: center;
+}
+
+li:first-child {
+    border-top: 1px solid var(--neutral-clr);
 }
 
 a {
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--neutral-clr);
+}
+
 a:hover {
     color: var(--accent-clr);
     font-weight: bold;
+    font-size: 1.2rem;
+    overflow: visible;
+}
+
+table, th, td {
+    border: 1px solid var(--neutral-clr);
+}
+
+th {
+    padding: 0.2rem;
+    background-color: var(--accent-clr);
+}
+
+td {
+    text-align: right;
 }
